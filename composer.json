@@ -1,0 +1,28 @@
+{
+    "name": "amaal/complain",
+    "description": "This is a package for a complain system",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "complain\\Contact\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^8",
+        "spatie/laravel-permission": "^5.0"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Test\\": "tests/",
+            "complain\\Contact\\": "packages/complain/Contact/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Amaal\\Complain\\ContactServiceProvider"
+            ]
+        }
+    }
+}
